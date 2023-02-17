@@ -1,3 +1,3 @@
 #!/bin/bash
-gcc -S $CFILE  -o c.s
+gcc -S $CFILE -o s
 
