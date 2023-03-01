@@ -6,17 +6,17 @@
 
 void rev_string(char *s)
 {
-	char gb = s[0];
-	int y = 0;
+	char rev = s[0];
+	int counter = 0;
 	int x;
 
-	while (s[y] != '\0')
-		y++;
-	for (x = 0; x < y; x++)
+	while (s[counter] != '\0')
+		counter++;
+	for (x = 0; x < counter; x++)
 	{
-		y--;
-		gb = s[y];
-		s[x] = s[y];
-		s[y] = gb;
+		counter--;
+		rev = s[x];
+		s[x] = s[counter];
+		s[counter] = rev;
 	}
 }
