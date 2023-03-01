@@ -5,7 +5,7 @@
  * Return: length of string
  */
 
-void _puts(char *str);
+void _puts(char *str)
 {
 	int y = 0;
 
