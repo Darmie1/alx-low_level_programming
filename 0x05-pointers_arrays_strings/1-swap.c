@@ -8,9 +8,9 @@
 
 void swap_int(int *a, int *b)
 {
-	int sw;
+	int w;
 
-	sw = *a;
-	*b = *a;
+	w = *a;
 	*a = *b;
+	*b = w;
 }
