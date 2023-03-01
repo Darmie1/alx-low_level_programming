@@ -12,7 +12,7 @@ void rev_string(char *s)
 
 	while (s[y] != '\0')
 		y++;
-	for (x = 0; x < c; x++)
+	for (x = 0; x < y; x++)
 	{
 		y--;
 		gb = s[y];
