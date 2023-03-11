@@ -2,18 +2,20 @@
 /**
  *_abs - compute the absolute value of integer
  * @c 'the number to be computed
- * Return: the value of the integer
+ * Return: c
  */
 
 int _abs(int c)
 
 {
 	if (c < 0)
-	{
-		int abs_val;
+		c = -(c);
 
-		abs_val = c * -1;
-		return (abs_val);
+	{
+		else if
+		(c >= 0)
+		c = c;
 	}
-	return (c);
+
+		return (c);
 }
