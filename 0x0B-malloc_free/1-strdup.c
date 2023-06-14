@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * *_strdup - returns a pointer to a new string which is a duplicate of the str
- * @*str : string to be duplicated
+ * _strdup - returns a pointer to a new string which is a duplicate of the str
+ * @str : string to be duplicated
+ * Return: pointer to the duplicated string
  */
 char *_strdup(char *str)
 {
 	size_t len = 0;
-	char *dup;
 	size_t z;
+	char *dup = (char *) malloc((len + 1) * sizeof(char));
 
 	if (str == NULL)
 	{
@@ -18,7 +19,7 @@ char *_strdup(char *str)
 	{
 		len++;
 	}
-	(char *) malloc((len + 1) * sizeof(char));
+
 	if (dup == NULL)
 	{
 		return (NULL);
