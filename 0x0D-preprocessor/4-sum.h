@@ -5,7 +5,7 @@
 
 /**
  * SUM - computes the sum of the numbers x and y
- * @x: to be added with y 
+ * @x: to be added with y
  * @y: to be added with x
  */
 
