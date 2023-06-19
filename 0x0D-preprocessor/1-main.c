@@ -9,7 +9,6 @@
  */
 int main(void)
 {
-
     float a;
     float r;
 
