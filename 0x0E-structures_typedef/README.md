@@ -1,39 +1,12 @@
-0x0E Structures and typedef
-READMEmd
+STRUCTURES AND TYPEDEF
+
+
+Structures in C allow you to group related data items of different types into a single unit. It allows you to define your own custom data type that can hold multiple variables with different data types. A structure is defined using the struct keyword, followed by the structure name and a block of member declarations enclosed in curly braces
+
+C allows you to use the typedef keyword to create an alias or a new name for an existing data type. With typedef, you can define a new name for a structure type, which simplifies the declaration and makes the code more readable.
+
+The general rule with the use of typedef is to write out a declaration as if you were declaring variables of the types that you want. Where a declaration would have introduced names with particular types, prefixing the whole thing with typedef means that, instead of getting variables declared, you declare new type names instead. Those new type names can then be used as the prefix to the declaration of variables of the new type.
 
 
 
-C - Structures, typedef TASKS 0. Poppy Define a new type struct dog with the following elements:
-
-name, type = char *
-
-age, type = float
-
-owner, type = char *
-
-A dog is the only thing on earth that loves you more than you love yourself Write a function that initialize a variable of type struct dog
-Prototype: void init_dog(struct dog *d, char *name, float age, char *owner);
-
-A dog will teach you unconditional love. If you can have that in your life, things won't be too bad Write a function that prints a struct dog
-Prototype: void print_dog(struct dog *d);
-
-Format: see example bellow
-
-You are allowed to use the standard library
-
-If an element of d is NULL, print (nil) instead of this element. (if name is NULL, print Name: (nil))
-
-If d is NULL print nothing.
-
-Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read Define a new type dog_t as a new name for the type struct dog.
-A door is what a dog is perpetually on the wrong side of Write a function that creates a new dog.
-Prototype: dog_t *new_dog(char *name, float age, char *owner);
-
-You have to store a copy of name and owner
-
-Return NULL if the function fails
-
-How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg Write a function that frees dogs.
-Prototype: void free_dog(dog_t *d);
-
-
+The requirement for this project allows only few  C standard library functions which include printf, malloc, free and exit.

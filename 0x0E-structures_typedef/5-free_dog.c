@@ -1,9 +1,9 @@
-#include <stdlib.h>
 #include "dog.h"
-
+#include <stdlib.h>
 /**
- * free_dog - frees memory allocated for a struct dog
- * @d: struct dog to free
+ * free_dog - This function frees dogs
+ * @d: this parameter represents the struct dog to free
+ * Return: 0
  */
 void free_dog(dog_t *d)
 {
