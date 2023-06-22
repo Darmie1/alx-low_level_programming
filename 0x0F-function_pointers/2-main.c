@@ -11,7 +11,6 @@ int is_98(int elem)
 {
     return (98 == elem);
 }
-
 /**
  * is_strictly_positive - check if a number is greater than 0
  * @elem: the integer to check
@@ -38,7 +37,7 @@ int abs_is_98(int elem)
 /**
  * main - check the code
  *
- * Return: Always 0.
+ * * Return: Always 0.
  */
 int main(void)
 {

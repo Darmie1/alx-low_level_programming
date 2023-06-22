@@ -1,15 +1,16 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
- * main - prints its own opcodes
- * @argc: number of arguments
- * @argv: array of arguments
- * Return: Always 0 (Success)
+ * main - this function prints its own op codes
+ * @argc: the number of arguments presrnt
+ * @argv: array of arguent present
+ * Return: 0
  */
 int main(int argc, char *argv[])
 {
-	int bytes, i;
+	int moy;
+	int i;
 	char *arr;
 
 	if (argc != 2)
@@ -17,19 +18,16 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(1);
 	}
-	bytes = atoi(argv[1]);
-
-	if (bytes < 0)
+	moy = atoi(argv[1]);
+	if (moy < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-
 	arr = (char *)main;
-
-	for (i = 0; i < bytes; i++)
+	for (i = 0; i < moy; i++)
 	{
-		if (i == bytes - 1)
+		if (i == moy - 1)
 		{
 			printf("%02hhx\n", arr[i]);
 			break;
