@@ -37,7 +37,8 @@ void print_all(const char * const format, ...)
 		ptr++;
 		if (*ptr)
 			printf(", ");
+
+	va_end(wlist);
 	}
 	printf("\n");
-	va_end(wlist);
 }
