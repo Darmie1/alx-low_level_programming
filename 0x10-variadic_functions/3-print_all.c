@@ -27,9 +27,8 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				strg = va_arg(wlist, char *);
-				if (strg)
-					printf("%s", strg);
-				else
+				printf("%s", strg);
+				if (strg == NULL)
 					printf("(nil)");
 				break;
 			default:
