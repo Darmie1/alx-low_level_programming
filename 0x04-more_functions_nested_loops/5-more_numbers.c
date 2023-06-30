@@ -1,20 +1,21 @@
 #include "main.h"
 /**
- *more_numbers - function that prints 5 times of numbers
+ *more_numbers - this function will print 1-14 ten times when being called
  *return: 0
  */
 void more_numbers(void)
 {
-	int i = 1;
-	int j = 0;
+	int ii = 1;
+	int jj = 0;
 
-	while (i < 15)
-		_putchar('\n');
-		i++;
+	for (ii = 0; ii <= 9; ii++)
+	{
+		for (jj = 1; jj <= 14; jj++)
 		{
-			while (j < 14)
-			_putchar(j + '0');
-			j++;
+			if (jj > 9)
+			_putchar((jj / 10) + '0');
+			_putchar((jj % 10) + '0');
 		}
+	}
 	_putchar('\n');
 }
