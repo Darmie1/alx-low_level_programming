@@ -1,12 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#include <stdlib.h>
 
 #include <unistd.h>
 #include <sys/types.h>
 
 #include <fcntl.h>
 #include <sys/stat.h>
+
+#define BUFFER_SIZE 1024
+
 /**prototypes of all the functions  goes here
  */
 
