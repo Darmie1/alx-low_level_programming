@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -11,31 +12,27 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char arrolet[letters + 1];
-	ssize_t byre = fread(arrolet, sizeof(char), letters, file);
-	ssize_t byw = fwrite(arrolet, sizeof(char), byre, stdout);
+	char *b;
+	ssize_t rrd;
+	ssize_t wri;
+	ssize_t max;
 
-	if (filename == NULL)
-	{
-		return (0);
-	}
-	FILE *file = fopen(filename, "r");
+	rrd = open(filename, O_RDONLY);
 
-	if (file == NULL)
+	if (rrd == -1)
 	{
 		return (0);
 	}
-	if (byre <= 0)
-	{
-		fclose(file);
-		return (0);
-	}
-	arrolet[byre] = '\0';
-	if (byw != byre)
-	{
-		fclose(file);
-		return (0);
-	}
-	fclose(file);
-	return (byw);
+	b = malloc(sizeof(char) * letters);
+	max = read(rrd, b, letters);
+
+	wri = write(STDOUT_FILENO, b, max);
+
+	free(b);
+	close(rrd);
+
+	return (wri);
 }
+
+
+

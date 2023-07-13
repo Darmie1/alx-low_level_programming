@@ -1,7 +1,14 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-// prototypes of all the functions  goes here
+
+#include <unistd.h>
+#include <sys/types.h>
+
+#include <fcntl.h>
+#include <sys/stat.h>
+/**prototypes of all the functions  goes here
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters);
 int create_file(const char *filename, char *text_content);
