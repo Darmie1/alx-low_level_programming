@@ -16,5 +16,5 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 		couNTS += REsultxor & 1;
 		REsultxor >>= 1;
 	}
-	return couNTS;
+	return (couNTS);
 }
