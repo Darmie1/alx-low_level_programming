@@ -9,4 +9,8 @@
 
 int get_endianness(void)
 {
+	unsigned int examine = 1;
+	unsigned char *ptexam = (unsigned char *)&examine;
 
+	return ((*ptexam == 1) ? 1 : 0);
+}
